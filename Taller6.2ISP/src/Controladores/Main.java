@@ -15,6 +15,14 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        PaquetePeligroso paquetePeligroso = new PaquetePeligroso();
+        PaquetePequeño paquetePequeño = new PaquetePequeño();
+        PaqueteGrande paqueteGrande = new PaqueteGrande();
+        
+        paqueteGrande.calcularCostoEnvioGrande();
+        paquetePequeño.calcularCostoEnvioPequeño();
+        paquetePeligroso.aegurarPaquetePeligroso();
+        paquetePeligroso.verificarContenidoPeligroso();
     }
     
 }

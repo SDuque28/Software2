@@ -15,6 +15,13 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Libro libro = new Libro();
+        Cartilla cartilla = new Cartilla();
+        DVD dvd = new DVD();
+        
+        dvd.devolver();
+        cartilla.mantenimientoHojas();
+        libro.renovarPortada();
     }
     
 }

@@ -8,7 +8,7 @@ package Controladores;
  *
  * @author SANTIAGO DUQUE
  */
-public class PaquetePequeño extends Paquete{
+public class PaquetePequeño extends Paquete implements IPaquetePequeño{
     private float valor;
 
     public PaquetePequeño() {
@@ -25,6 +25,11 @@ public class PaquetePequeño extends Paquete{
 
     public void setValor(float valor) {
         this.valor = valor;
+    }
+
+    @Override
+    public void calcularCostoEnvioPequeño() {
+        System.out.println("Se calculo el costo paquete pequeño");
     }
     
 }
