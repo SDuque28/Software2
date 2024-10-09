@@ -14,11 +14,19 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        CanalNotificacion canalCorreo = new CanalCorreoElectronico();
-        Notificador notificador = new Notificador(canalCorreo);
+        CanalNotificacion canalCorreo1 = new CanalCorreoElectronico();
+        CanalNotificacion canalCorreo2 = new CanalSMS();
+        CanalNotificacion canalCorreo3 = new CanalWhatsapp();
+        
+        Notificador notificador1 = new Notificador(canalCorreo1);
+        Notificador notificador2 = new Notificador(canalCorreo2);
+        Notificador notificador3 = new Notificador(canalCorreo3);
         
         Notificacion notificacion = new Notificacion("T-Notificacion", "Cuerpo del correo");
-        notificador.enviarNotificacion(notificacion);
+        
+        notificador1.enviarNotificacion(notificacion);
+        notificador2.enviarNotificacion(notificacion);
+        notificador3.enviarNotificacion(notificacion);
     }
     
 }
