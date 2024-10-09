@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  *
- * @author Santiago
+ * @author SANTIAGO DUQUE
  */
 public class CrudCliente implements PersistenciaCliente{
     private List<Cliente> clientes;

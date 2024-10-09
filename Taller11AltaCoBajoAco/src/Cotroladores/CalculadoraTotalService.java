@@ -6,7 +6,7 @@ package Cotroladores;
 
 /**
  *
- * @author Santiago
+ * @author SANTIAGO DUQUE
  */
 public interface CalculadoraTotalService {
     public double CalcularTotal(Factura factura); 

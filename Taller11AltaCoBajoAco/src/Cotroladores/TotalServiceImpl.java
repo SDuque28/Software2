@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  *
- * @author Santiago
+ * @author SANTIAGO DUQUE
  */
 public class TotalServiceImpl implements CalculadoraTotalService{
     

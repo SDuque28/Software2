@@ -6,7 +6,7 @@ package Cotroladores;
 
 /**
  *
- * @author Santiago
+ * @author SANTIAGO DUQUE
  * 
  */
 public interface PersistenciaProducto{

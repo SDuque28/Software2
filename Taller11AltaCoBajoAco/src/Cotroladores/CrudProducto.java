@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  *
- * @author Santiago
+ * @author SANTIAGO DUQUE
  */
 public class CrudProducto implements PersistenciaProducto{
     private List<Producto> productos; //Simula ser la base de datos

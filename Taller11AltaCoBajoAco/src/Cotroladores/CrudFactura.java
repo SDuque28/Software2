@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  *
- * @author Santiago
+ * @author SANTIAGO DUQUE
  */
 public class CrudFactura implements PersistenciaFactura{
     private List<Factura> facturas; //Simula la base de datos
