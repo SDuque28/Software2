@@ -11,7 +11,7 @@ package Controladores;
 public class CreadorPagoTarjeta extends CreadorPago{
 
     @Override
-    public MetodoDePago factoryMethod() {
+    public MetodoDePago crearMetodoPago() {
         return new PagoTarjeta();
     }
     

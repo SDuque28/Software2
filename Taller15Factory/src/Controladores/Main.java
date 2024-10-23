@@ -16,11 +16,13 @@ public class Main {
     public static void main(String[] args) {
         // Creador de pagos con tarjeta
         CreadorPago creadorTarjeta = new CreadorPagoTarjeta();
-        creadorTarjeta.realizarPago(150.75);  
+        MetodoDePago pagoTarjeta = creadorTarjeta.crearMetodoPago();
+        pagoTarjeta.procesarPago(150.75);  
         
         // Creador de pagos con PayPal
         CreadorPago creadorPaypal = new CreadorPagoPaypal();
-        creadorPaypal.realizarPago(250.00); 
+        MetodoDePago pagoPaypal = creadorPaypal.crearMetodoPago();
+        pagoPaypal.procesarPago(150.75); 
     }
     
 }
